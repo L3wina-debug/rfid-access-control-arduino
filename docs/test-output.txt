@@ -1,0 +1,15 @@
+PASS  authorised 4-byte UID
+PASS  authorised 7-byte UID
+PASS  one byte different is refused
+PASS  UID prefix is refused
+PASS  empty UID is refused
+PASS  invalid length is refused
+PASS  empty allow-list refuses all
+PASS  2 failures: not locked
+PASS  3 failures: locked
+PASS  lock expires after 30 s
+PASS  success resets the failure count
+PASS  same card within 1.5 s is a repeat
+PASS  same card after 1.5 s is a new read
+PASS  different card is not a repeat
+14/14 tests passed
